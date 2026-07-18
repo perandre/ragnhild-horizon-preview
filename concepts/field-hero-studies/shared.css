@@ -878,7 +878,7 @@
       height: .5rem;
       flex: 0 0 auto;
       background: transparent;
-      transform: none;
+      transform: translateY(-.0625rem);
     }
 
     .horizon .menu-toggle > span::before,
@@ -894,7 +894,7 @@
 
     .horizon .menu-toggle > span::before { top: .08rem; transform: none; }
     .horizon .menu-toggle > span::after { bottom: .08rem; }
-    .horizon .menu-toggle[aria-expanded="true"] > span { transform: none; }
+    .horizon .menu-toggle[aria-expanded="true"] > span { transform: translateY(-.0625rem); }
     .horizon .menu-toggle[aria-expanded="true"] > span::before,
     .horizon .menu-toggle[aria-expanded="true"] > span::after {
       top: 50%;
