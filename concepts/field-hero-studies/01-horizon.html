@@ -54,9 +54,9 @@
       <small class="credit reveal" style="--delay: 840ms">Photo · Cathrine Dokken</small>
     </section>
 
-    <section class="movement world-section" id="projects" aria-labelledby="world-title">
+    <section class="movement world-section" id="world" aria-labelledby="world-title">
       <div class="section-shell world-opening">
-        <p class="movement-index scroll-reveal">I <span>Projects</span></p>
+        <p class="movement-index scroll-reveal">I <span>Her world</span></p>
         <div class="world-statement scroll-reveal">
           <h2 id="world-title">A voice between <em>worlds.</em></h2>
           <p>Raised in Valdres, Ragnhild carries the ringing overtones of the Hardanger fiddle into the concert hall—and lets the classical violin answer.</p>
@@ -146,10 +146,67 @@
       </div>
     </section>
 
+    <section class="movement project-orbit" id="projects" aria-labelledby="projects-title" data-project-orbit data-world="vetra">
+      <div class="project-orbit__atmosphere" aria-hidden="true">
+        <img data-project-atmosphere="0" data-active="true" src="../../web/public/images/vetra-card.jpg" width="2400" height="1545" loading="lazy" alt="">
+        <img data-project-atmosphere="1" data-active="false" src="../../web/public/images/seasons-field.jpg" width="2400" height="1551" loading="lazy" alt="">
+        <img data-project-atmosphere="2" data-active="false" src="../../web/public/images/peer-gynt-ledge.jpg" width="2600" height="1732" loading="lazy" alt="">
+      </div>
+      <div class="project-orbit__stage" style="--arc-turn: 0deg">
+        <header class="project-orbit__heading">
+          <p class="section-note">II · A programme in three movements</p>
+          <h2 id="projects-title">One voice. Three worlds.</h2>
+        </header>
+
+        <div class="project-orbit__programme" role="tablist" aria-label="Choose a movement">
+          <button class="project-orbit__movement" data-project-tab="0" data-state="active" id="project-tab-0" type="button" role="tab" aria-selected="true" aria-controls="project-orbit-panel" tabindex="0">
+            <span class="project-orbit__number">01</span><span><strong>VETRA</strong><small>Folk-jazz band</small></span>
+          </button>
+          <button class="project-orbit__movement" data-project-tab="1" data-state="inactive" id="project-tab-1" type="button" role="tab" aria-selected="false" aria-controls="project-orbit-panel" tabindex="-1">
+            <span class="project-orbit__number">02</span><span><strong>Seasons</strong><small>Vivaldi · Folk</small></span>
+          </button>
+          <button class="project-orbit__movement" data-project-tab="2" data-state="inactive" id="project-tab-2" type="button" role="tab" aria-selected="false" aria-controls="project-orbit-panel" tabindex="-1">
+            <span class="project-orbit__number">03</span><span><strong>Peer Gynt</strong><small>Grieg reimagined</small></span>
+          </button>
+        </div>
+
+        <div class="project-orbit__visual">
+          <svg class="project-orbit__embroidery" viewBox="0 0 1000 650" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+            <path pathLength="1" d="M34 468 C142 348 132 170 274 206 S411 470 509 314 C574 209 620 154 694 232 S772 520 932 352 C994 287 948 178 858 190"></path>
+          </svg>
+          <div class="project-orbit__medallion">
+            <span class="project-orbit__arc project-orbit__arc--outer" aria-hidden="true"></span>
+            <figure class="project-orbit__portal">
+              <img class="project-orbit__image" data-project-image="0" data-active="true" src="../../web/public/images/vetra-card.jpg" width="2400" height="1545" loading="lazy" alt="Ragnhild Hemsing in white against snow-covered mountains, her dress caught by the wind." style="object-position: 54% 35%">
+              <img class="project-orbit__image" data-project-image="1" data-active="false" src="../../web/public/images/seasons-field.jpg" width="2400" height="1551" loading="lazy" alt="" aria-hidden="true" style="object-position: 54% 30%">
+              <img class="project-orbit__image" data-project-image="2" data-active="false" src="../../web/public/images/peer-gynt-ledge.jpg" width="2600" height="1732" loading="lazy" alt="" aria-hidden="true" style="object-position: 49% 49%">
+              <span class="project-orbit__veil" aria-hidden="true"></span>
+              <figcaption class="project-orbit__credit" data-project-credit>Photo · Cathrine Dokken</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <article class="project-orbit__copy" id="project-orbit-panel" role="tabpanel" aria-labelledby="project-tab-0">
+          <h3 data-project-title><span>VETRA</span></h3>
+          <span class="project-orbit__title-echo" data-project-echo aria-hidden="true">VETRA</span>
+          <p class="project-orbit__category" data-project-category>Ragnhild Hemsing · Folk-jazz band</p>
+          <div class="project-orbit__details">
+            <p class="project-orbit__proposition" data-project-proposition>Folk melody, jazz improvisation and the elemental sound of a Norwegian winter.</p>
+            <a class="project-orbit__link" data-project-link href="/projects/vetra/">Enter VETRA <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <div class="project-orbit__controls">
+          <button type="button" class="project-orbit__control" data-project-previous><span aria-hidden="true">←</span> Previous</button>
+          <button type="button" class="project-orbit__control" data-project-next>Next <span aria-hidden="true">→</span></button>
+        </div>
+      </div>
+    </section>
+
     <section class="movement concerts-section" id="concerts" aria-labelledby="concerts-title">
       <div class="section-shell">
         <header class="concerts-heading scroll-reveal">
-          <p class="movement-index movement-index--light">II <span>On stage</span></p>
+          <p class="movement-index movement-index--light">III <span>On stage</span></p>
           <div>
             <p class="section-note">Next performance</p>
             <h2 id="concerts-title">Concerts.</h2>
@@ -190,7 +247,7 @@
     <section class="movement journal-section" id="news" aria-labelledby="journal-title">
       <div class="section-shell">
         <header class="journal-heading scroll-reveal">
-          <p class="movement-index">III <span>News</span></p>
+          <p class="movement-index">IV <span>News</span></p>
           <h2 id="journal-title">Stories from<br><em>inside the music.</em></h2>
           <p>Field notes, collaborations and the ideas that continue after the last note.</p>
         </header>
@@ -257,5 +314,6 @@
     </div>
   </footer>
   <script src="shared.js"></script>
+  <script src="horizon-page.js"></script>
 </body>
 </html>
