@@ -245,7 +245,7 @@
   .chapter-image img {
     width: 100%;
     height: 100%;
-    border: 4px solid var(--white);
+    border: 8px solid var(--white);
     object-fit: cover;
     box-shadow: 0 1.2rem 3.5rem rgba(24,24,19,.12);
     transition: transform 1200ms cubic-bezier(.16,1,.3,1);
