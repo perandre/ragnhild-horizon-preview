@@ -311,17 +311,6 @@
     line-height: .77;
   }
 
-  .recordings-heading > p:last-child {
-    grid-column: 2;
-    grid-row: 2;
-    max-width: 19rem;
-    justify-self: end;
-    color: var(--ink-soft);
-    font-family: var(--font-display);
-    font-size: 1.3rem;
-    font-style: italic;
-  }
-
   .album-lineup {
     margin-top: clamp(7rem, 11vw, 12rem);
     display: grid;
@@ -851,9 +840,6 @@
     .world-opening { grid-template-columns: 5rem minmax(0, 1fr); }
     .world-coordinate { display: none; }
     .instrument-copy { gap: 4rem; }
-    .album-lineup { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .album { --album-shift: 0; }
-    .album:nth-child(even) { --album-shift: clamp(1.75rem, 3.5vw, 3rem); }
     .next-concert { grid-template-columns: 10rem minmax(19rem, 1fr) 12rem auto; gap: 2rem; }
     .journal-grid { gap: 4rem; }
     .story--feature { grid-template-columns: 1fr; }
@@ -894,9 +880,9 @@
 
     .recordings-heading { display: grid; grid-template-columns: 1fr; gap: 1.8rem; }
     .recordings-heading > * { grid-column: 1; grid-row: auto; }
-    .recordings-heading > p:last-child { justify-self: start; }
 
     .album-lineup { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4.5rem 1.5rem; }
+    .album { --album-shift: 0; }
     .album:nth-child(even) { --album-shift: 1.75rem; }
     .album-meta { grid-template-columns: 2.5rem 1fr; gap: .45rem; }
     .album-meta span { font-size: 1.18rem; }
