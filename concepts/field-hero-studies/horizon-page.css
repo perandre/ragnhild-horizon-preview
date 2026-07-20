@@ -159,8 +159,10 @@
     line-height: 1.28;
   }
 
-  .world-statement > .editorial-button {
-    margin: clamp(2rem, 3vw, 3rem) 0 0 auto;
+  .world-action {
+    grid-column: 1 / -1;
+    justify-self: center;
+    margin-top: clamp(2rem, 3vw, 3rem);
   }
 
   .world-coordinate {
